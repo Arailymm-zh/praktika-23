@@ -1,0 +1,18 @@
+for(var i = 1; i < 6; i++) {
+  setTimeout(function() {
+     console.log(i);
+  },1000);
+}
+console.log('The loop is done!');
+
+---------------------------------
+
+console.time('myTimer');
+for(var i = 1; i < 6; i++) {
+   console.log('Loop Number' + i); 
+   setTimeout(()=>{
+      console.log(i);
+   },1000);
+}
+console.log('The loop is done!');
+console.timeEnd('myTimer');
